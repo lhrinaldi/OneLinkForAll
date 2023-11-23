@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A90591242B0FD70D00690566 /* DLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90591232B0FD70D00690566 /* DLViewController.swift */; };
+		A9898F2F2B0E3DB200A48A6F /* AppsFlyerLib in Frameworks */ = {isa = PBXBuildFile; productRef = A9898F2E2B0E3DB200A48A6F /* AppsFlyerLib */; };
 		A99BD5462B07C8C2001ED0F3 /* OneLinkForAllApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99BD5452B07C8C2001ED0F3 /* OneLinkForAllApp.swift */; };
 		A99BD5482B07C8C2001ED0F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99BD5472B07C8C2001ED0F3 /* ContentView.swift */; };
 		A99BD54A2B07C8C2001ED0F3 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99BD5492B07C8C2001ED0F3 /* Item.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A90591222B0E8D1A00690566 /* OneLinkForAll.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OneLinkForAll.entitlements; sourceTree = "<group>"; };
+		A90591232B0FD70D00690566 /* DLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLViewController.swift; sourceTree = "<group>"; };
 		A99BD5422B07C8C2001ED0F3 /* OneLinkForAll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneLinkForAll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A99BD5452B07C8C2001ED0F3 /* OneLinkForAllApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneLinkForAllApp.swift; sourceTree = "<group>"; };
 		A99BD5472B07C8C2001ED0F3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9898F2F2B0E3DB200A48A6F /* AppsFlyerLib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,11 +101,13 @@
 		A99BD5442B07C8C2001ED0F3 /* OneLinkForAll */ = {
 			isa = PBXGroup;
 			children = (
+				A90591222B0E8D1A00690566 /* OneLinkForAll.entitlements */,
 				A99BD5452B07C8C2001ED0F3 /* OneLinkForAllApp.swift */,
 				A99BD5472B07C8C2001ED0F3 /* ContentView.swift */,
 				A99BD5492B07C8C2001ED0F3 /* Item.swift */,
 				A99BD54B2B07C8C4001ED0F3 /* Assets.xcassets */,
 				A99BD54D2B07C8C4001ED0F3 /* Preview Content */,
+				A90591232B0FD70D00690566 /* DLViewController.swift */,
 			);
 			path = OneLinkForAll;
 			sourceTree = "<group>";
@@ -146,6 +153,9 @@
 			dependencies = (
 			);
 			name = OneLinkForAll;
+			packageProductDependencies = (
+				A9898F2E2B0E3DB200A48A6F /* AppsFlyerLib */,
+			);
 			productName = OneLinkForAll;
 			productReference = A99BD5422B07C8C2001ED0F3 /* OneLinkForAll.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +228,9 @@
 				Base,
 			);
 			mainGroup = A99BD5392B07C8C2001ED0F3;
+			packageReferences = (
+				A9898F2D2B0E3DB200A48A6F /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */,
+			);
 			productRefGroup = A99BD5432B07C8C2001ED0F3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -260,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A90591242B0FD70D00690566 /* DLViewController.swift in Sources */,
 				A99BD5482B07C8C2001ED0F3 /* ContentView.swift in Sources */,
 				A99BD54A2B07C8C2001ED0F3 /* Item.swift in Sources */,
 				A99BD5462B07C8C2001ED0F3 /* OneLinkForAllApp.swift in Sources */,
@@ -423,10 +437,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = OneLinkForAll/OneLinkForAll.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"OneLinkForAll/Preview Content\"";
-				DEVELOPMENT_TEAM = FAARFASLG5;
+				DEVELOPMENT_TEAM = AG9R6ZPL5S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -439,7 +454,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lhr.OneLinkForAll;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mhe.pocappflyer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -452,10 +467,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = OneLinkForAll/OneLinkForAll.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"OneLinkForAll/Preview Content\"";
-				DEVELOPMENT_TEAM = FAARFASLG5;
+				DEVELOPMENT_TEAM = AG9R6ZPL5S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -468,7 +484,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lhr.OneLinkForAll;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mhe.pocappflyer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -592,6 +608,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A9898F2D2B0E3DB200A48A6F /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppsFlyerSDK/AppsFlyerFramework";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 6.12.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A9898F2E2B0E3DB200A48A6F /* AppsFlyerLib */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9898F2D2B0E3DB200A48A6F /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */;
+			productName = AppsFlyerLib;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A99BD53A2B07C8C2001ED0F3 /* Project object */;
 }
